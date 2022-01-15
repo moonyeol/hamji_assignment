@@ -5,7 +5,7 @@ from django import forms
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        fields = ('name', 'body')
+        fields = ('writer', 'content')
 
 
 class ChoiceForm(forms.ModelForm):
