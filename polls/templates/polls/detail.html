@@ -27,7 +27,7 @@
         <p><input type="submit" value="Add comment"></p>
     </form>
     {% if not question.comments.all %}
-        No comments yet...
+        No comments
         <br>
     {% else %}
         {% for comment in question.comments.all %}
@@ -48,7 +48,7 @@
                         <input type="submit" value="Reply">
                     </form>
                     {% if not comment.replies.all %}
-                        No replies yet...
+                        No replies
                         <br><br>
                     {% else %}
                         {% for reply in comment.replies.all %}

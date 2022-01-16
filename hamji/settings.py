@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_filters",
-    "users.apps.UsersConfig",
+    "users",
     "polls.apps.PollsConfig",
 ]
 

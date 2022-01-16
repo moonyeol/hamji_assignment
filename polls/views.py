@@ -73,9 +73,9 @@ def comment(request, question_id):
 
             if 'parent_id' in request.POST:
                 parent_id = int(request.POST['parent_id'])
-                parent_obj = Comment.objects.get(id=parent_id)
-                if parent_obj:
-                    new_comment.parent = parent_obj
+                parent = Comment.objects.get(id=parent_id)
+                if parent:
+                    new_comment.parent = parent
 
             new_comment.question = question
             new_comment.save()
