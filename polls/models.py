@@ -33,4 +33,4 @@ class Comment(models.Model):
     parent = models.ForeignKey('self', on_delete=models.CASCADE, blank=True, null=True, related_name='replies')
 
     def __str__(self):
-        return '%s - %s' % (self.name, self.body)
+        return '%s - %s' % (self.writer, self.content)
